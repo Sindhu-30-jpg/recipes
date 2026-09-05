@@ -31,7 +31,7 @@ function Getproducts(){
     const get_recipes=async()=>{
 
     
-        let response=await fetch('http://127.0.0.1:8000/recipes/')
+        let response=await fetch('https://food-backend-server-xvja.onrender.com/recipes/')
         response=await response.json()
         console.log(response)
         setproducts(response.recipes)
@@ -47,7 +47,19 @@ function Getproducts(){
     }
 
     </div>
-}export default Getproducts
+}
+export default Getproducts
+
+
+
+
+
+
+
+
+
+
+
 
 
 
